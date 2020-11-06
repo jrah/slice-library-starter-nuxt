@@ -21,8 +21,10 @@
     "@nuxtjs/prismic": "^1.2.4",
     "@prismicio/vue": "^2.0.7",
     "core-js": "^3.6.5",
+    "node-sass": "^5.0.0",
     "nuxt": "^2.14.7",
     "nuxt-sm": "^0.0.6",
+    "sass-loader": "^10.0.5",
     "vue-slicezone": "^0.0.28"
   },
   "devDependencies": {
