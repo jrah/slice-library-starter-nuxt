@@ -46,6 +46,13 @@
             "thumbnails": [],
             "label": "image"
           }
+        },
+        "paragraph": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "paragraph"
+          }
         }
       }
     }

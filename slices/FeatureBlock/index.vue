@@ -8,14 +8,23 @@
       :field="slice.primary.subheading"
       class="subheading mt-3 text-center max-w-4xl mx-auto"
     />
-    <div class="mt-6 flex">
-      <div v-for="(item, i) in slice.items" :key="i" class="item">
+    <div class="mt-6 flex justify-around flex-wrap -mx-3">
+      <div v-for="(item, i) in slice.items" :key="i" class="flex-1 mx-3">
         <prismic-rich-text :field="item.subheading" class="subheading" />
-        <img :src="item.image.url" :alt="item.image.alt" />
-        <prismic-rich-text
-          :field="item.heading"
-          :class="`${slice.slice_type}` - `${item.heading[0].type}`"
+        <img
+          :src="item.image.url"
+          :width="item.image.dimensions.width"
+          :height="item.image.dimensions.height"
+          :alt="item.image.alt"
         />
+        <div class="mt-3">
+          <prismic-rich-text
+            :field="item.heading"
+            class="text-lg leading-6 font-medium"
+            :class="`${slice.slice_type}` - `${item.heading[0].type}`"
+          />
+          <prismic-rich-text :field="item.paragraph" class="mt-3" />
+        </div>
       </div>
     </div>
   </div>
@@ -33,3 +42,10 @@ export default {
   },
 };
 </script>
+
+<style lang="css">
+.container {
+  @apply max-w-4xl;
+  @apply mx-auto;
+}
+</style>
