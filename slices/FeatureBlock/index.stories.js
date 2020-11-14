@@ -41,10 +41,10 @@ export const _DefaultSlice = () => ({
           "Subheading",
           _mock.primary.subheading[0].text
         );
-        // _mock.items = object(
-        //   "Items (blocks)",
-        //   _mock.items
-        // );
+        _mock.items = object(
+          "Items (blocks)",
+          _mock.items
+        );
         return _mock;
       })()
     }
