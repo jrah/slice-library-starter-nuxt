@@ -49,6 +49,7 @@ export default {
     transpile: ["vue-slicezone", "nuxt-sm"]
   },
   storybook: {
+    addons: ["@storybook/addon-knobs/register"],
     stories: ["~/slices/**/*.stories.js"]
   },
   ignore: ["**/*.stories.js"]
