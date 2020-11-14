@@ -1,7 +1,9 @@
 import smConfig from "./sm.json";
 
 if (!smConfig.apiEndpoint) {
-  console.warn("Looks like Slice Machine hasn't been bootstraped already.\nCheck the `Getting Started` section of the README file :)");
+  console.warn(
+    "Looks like Slice Machine hasn't been bootstraped already.\nCheck the `Getting Started` section of the README file :)"
+  );
 }
 
 export default {
@@ -10,21 +12,27 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: "slice-library-starter-nuxt",
-    meta: [{
-      charset: "utf-8"
-    }, {
-      name: "viewport",
-      content: "width=device-width, initial-scale=1"
-    }, {
-      hid: "description",
-      name: "description",
-      content: ""
-    }],
-    link: [{
-      rel: "icon",
-      type: "image/x-icon",
-      href: "/favicon.ico"
-    }]
+    meta: [
+      {
+        charset: "utf-8",
+      },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1",
+      },
+      {
+        hid: "description",
+        name: "description",
+        content: "",
+      },
+    ],
+    link: [
+      {
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/favicon.ico",
+      },
+    ],
   },
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [],
@@ -33,33 +41,47 @@ export default {
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: ['@nuxtjs/tailwindcss'],
+  buildModules: ["@nuxtjs/tailwindcss"],
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [["@nuxtjs/prismic", {
-    endpoint: smConfig.apiEndpoint || "",
-    apiOptions: {
-      routes: [{
-        type: "page",
-        path: "/:uid"
-      }]
-    }
-  }], ["nuxt-sm"]],
+  modules: [
+    [
+      "@nuxtjs/prismic",
+      {
+        endpoint: smConfig.apiEndpoint || "",
+        apiOptions: {
+          routes: [
+            {
+              type: "page",
+              path: "/:uid",
+            },
+          ],
+        },
+      },
+    ],
+    ["nuxt-sm"],
+    ["nuxt-webfontloader"],
+  ],
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    transpile: ["vue-slicezone", "nuxt-sm"]
+    transpile: ["vue-slicezone", "nuxt-sm"],
+  },
+  webfontloader: {
+    google: {
+      families: ['Inter:400,700']
+    }
   },
   storybook: {
     addons: ["@storybook/addon-knobs/register", "@storybook/addon-essentials"],
     stories: ["~/slices/**/*.stories.js"],
     parameters: {
       backgrounds: {
-        default: 'white',
+        default: "white",
         values: [
-          { name: 'white', value: '#ffffff' },
-          { name: 'gray', value: '#aaaaaa' },
+          { name: "white", value: "#ffffff" },
+          { name: "gray", value: "#aaaaaa" },
         ],
       },
     },
   },
-  ignore: ["**/*.stories.js"]
+  ignore: ["**/*.stories.js"],
 };
