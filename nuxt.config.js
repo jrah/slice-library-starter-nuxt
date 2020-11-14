@@ -78,7 +78,7 @@ export default {
         default: "white",
         values: [
           { name: "white", value: "#ffffff" },
-          { name: "gray", value: "#aaaaaa" },
+          { name: "gray", value: "#EDF2F7" },
         ],
       },
     },
