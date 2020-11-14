@@ -22,7 +22,7 @@
         "subheading": {
           "type": "StructuredText",
           "config": {
-            "single": "subheading",
+            "single": "paragraph",
             "label": "Subheading",
             "placeholder": "Subheading"
           }
