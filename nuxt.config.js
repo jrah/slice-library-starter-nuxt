@@ -81,6 +81,7 @@ export default {
           { name: "gray", value: "#EDF2F7" },
         ],
       },
+      layout: 'fullscreen',
     },
   },
   ignore: ["**/*.stories.js"],
