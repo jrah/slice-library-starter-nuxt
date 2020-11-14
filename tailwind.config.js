@@ -7,7 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: { 
-        'primary': '#1F1620'
+        // http://colormind.io/#:~:text=If%20no%20colors%20are%20locked%20Colormind%20will%20generate,them%20at%20the%20opposite%20ends%20of%20the%20palette.
+        'primary': '#1F1620',
+        'secondary': '#F6E5C9'
       }
     },
   },
