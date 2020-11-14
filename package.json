@@ -20,6 +20,7 @@
   "dependencies": {
     "@nuxtjs/prismic": "^1.2.4",
     "@prismicio/vue": "^2.0.7",
+    "@storybook/addon-essentials": "^6.0.28",
     "core-js": "^3.6.5",
     "node-sass": "^5.0.0",
     "nuxt": "^2.14.7",
@@ -28,10 +29,10 @@
     "vue-slicezone": "^0.0.28"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "6.0.26",
-    "@storybook/addon-knobs": "6.0.26",
     "@nuxtjs/storybook": "2.2.2",
     "@nuxtjs/tailwindcss": "^3.2.0",
+    "@storybook/addon-actions": "6.0.26",
+    "@storybook/addon-knobs": "6.0.26",
     "prismic-cli": "3.8.3-beta.0",
     "shx": "^0.3.3",
     "slice-machine-ui": "^0.0.38",
