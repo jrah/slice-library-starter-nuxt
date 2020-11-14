@@ -8,9 +8,8 @@
       :field="slice.primary.subheading"
       class="subheading mt-3 text-center max-w-4xl mx-auto"
     />
-    <div class="mt-6 flex justify-around flex-wrap -mx-3">
+     <div class="mt-6 flex justify-around flex-wrap -mx-3">
       <div v-for="(item, i) in slice.items" :key="i" class="flex-1 mx-3">
-        <prismic-rich-text :field="item.subheading" class="subheading" />
         <img
           :src="item.image.url"
           :width="item.image.dimensions.width"
