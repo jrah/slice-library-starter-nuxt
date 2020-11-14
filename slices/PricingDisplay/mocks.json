@@ -1,0 +1,166 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "PricingDisplay",
+    "primary": {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Our Pricing",
+          "spans": []
+        }
+      ],
+      "subheading": [
+        {
+          "type": "paragraph",
+          "text": "Join 1,000+ happy customers",
+          "spans": []
+        }
+      ]
+    },
+    "items": [
+      {
+        "heading": [
+          {
+            "type": "heading3",
+            "text": "Standard",
+            "spans": []
+          }
+        ],
+        "subheading": [
+          {
+            "type": "paragraph",
+            "text": "Free*/ Reporting, automation, and integrations for support teams",
+            "spans": []
+          }
+        ],
+        "list": [
+          {
+            "type": "list-item",
+            "text": "Lorem, ipsum dolor.",
+            "spans": []
+          },
+          {
+            "type": "list-item",
+            "text": "Lorem, ipsum dolor.",
+            "spans": []
+          },
+          {
+            "type": "list-item",
+            "text": "Lorem, ipsum dolor.",
+            "spans": []
+          },
+          {
+            "type": "list-item",
+            "text": "Lorem, ipsum dolor.",
+            "spans": []
+          },          {
+            "type": "list-item",
+            "text": "Lorem, ipsum dolor.",
+            "spans": []
+          }
+        ],
+        "link_url": {
+          "link_type": "Any"
+        },
+        "link_text": null
+      },
+      {
+        "heading": [
+          {
+            "type": "heading3",
+            "text": "Plus",
+            "spans": []
+          }
+        ],
+        "subheading": [
+          {
+            "type": "paragraph",
+            "text": "£250*/ Reporting, automation, and integrations for support teams",
+            "spans": []
+          }
+        ],
+        "list": [
+          {
+            "type": "list-item",
+            "text": "Lorem, ipsum dolor.",
+            "spans": []
+          },
+          {
+            "type": "list-item",
+            "text": "Lorem, ipsum dolor.",
+            "spans": []
+          },
+          {
+            "type": "list-item",
+            "text": "Lorem, ipsum dolor.",
+            "spans": []
+          },
+          {
+            "type": "list-item",
+            "text": "Lorem, ipsum dolor.",
+            "spans": []
+          },          {
+            "type": "list-item",
+            "text": "Lorem, ipsum dolor.",
+            "spans": []
+          }
+        ],
+        "link_url": {
+          "link_type": "Any"
+        },
+        "link_text": null
+      },
+      {
+        "heading": [
+          {
+            "type": "heading3",
+            "text": "Enterprise",
+            "spans": []
+          }
+        ],
+        "subheading": [
+          {
+            "type": "paragraph",
+            "text": "Contact Us*/ Reporting, automation, and integrations for support teams",
+            "spans": []
+          }
+        ],
+        "list": [
+          {
+            "type": "list-item",
+            "text": "Lorem, ipsum dolor.",
+            "spans": []
+          },
+          {
+            "type": "list-item",
+            "text": "Lorem, ipsum dolor.",
+            "spans": []
+          },
+          {
+            "type": "list-item",
+            "text": "Lorem, ipsum dolor.",
+            "spans": []
+          },
+          {
+            "type": "list-item",
+            "text": "Lorem, ipsum dolor.",
+            "spans": []
+          },          {
+            "type": "list-item",
+            "text": "Lorem, ipsum dolor.",
+            "spans": []
+          }
+        ],
+        "link_url": {
+          "link_type": "Any"
+        },
+        "link_text": null
+      }
+    ],
+    "slice_type": "pricing_display"
+  }
+]

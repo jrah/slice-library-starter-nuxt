@@ -1,0 +1,67 @@
+{
+  "id": "pricing_display",
+  "type": "SharedSlice",
+  "name": "PricingDisplay",
+  "description": "PricingDisplay",
+  "variations": [{
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "PricingDisplay",
+    "primary": {
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1",
+          "label": "Title",
+          "placeholder": "This is where it all begins..."
+        }
+      },
+      "subheading": {
+        "type": "StructuredText",
+        "config": {
+          "single": "paragraph",
+          "label": "Description",
+          "placeholder": "A nice description of your product"
+        }
+      }
+    },
+    "items" : {
+      "heading" : {
+        "type" : "StructuredText",
+        "config" : {
+          "multi" : "heading3",
+          "label" : "heading"
+        }
+      },
+      "paragraph" : {
+        "type" : "Text",
+        "config" : {
+          "label" : "paragraph",
+          "placeholder" : "Subheading"
+        }
+      },
+      "list" : {
+        "type" : "StructuredText",
+        "config" : {
+          "multi" : "list-item",
+          "label" : "list",
+          "placeholder" : "List of key bullet points"
+        }
+      },
+      "link_url" : {
+        "type" : "Link",
+        "config" : {
+          "label" : "Link URL"
+        }
+      },
+      "link_text" : {
+        "type" : "Text",
+        "config" : {
+          "label" : "Link Text"
+        }
+      }
+    }
+  }]
+}
