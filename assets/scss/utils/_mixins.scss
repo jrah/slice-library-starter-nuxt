@@ -1,0 +1,70 @@
+$mqs: (
+  sm: 640,
+  md: 768,
+  lg: 1024,
+  xl: 1280
+) !default;
+
+$percentage: 0.75;
+
+@mixin mq($mq) {
+  @if $mq == sm {
+    @media screen and (min-width: #{map-get($mqs, sm)}px) {
+      @content;
+    }
+  }
+  @if $mq == md {
+    @media screen and (min-width: #{map-get($mqs, md)}px) {
+      @content;
+    }
+  }
+  @if $mq == lg {
+    @media screen and (min-width: #{map-get($mqs, lg)}px) {
+      @content;
+    }
+  }
+  @if $mq == xl {
+    @media screen and (min-width: #{map-get($mqs, xl)}px) {
+      @content;
+    }
+  }
+}
+
+%mwc {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+@each $size, $width in $mqs {
+  %mwc {
+    @if $size == sm {
+      @media screen and (min-width: #{map-get($mqs, sm)}px) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: #{ceil((map-get($mqs, sm) / $percentage))}px;
+      }
+    }
+    @if $size == md {
+      @media screen and (min-width: #{map-get($mqs, md)}px) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: #{ceil((map-get($mqs, md) / $percentage))}px;
+      }
+    }
+    @if $size == lg {
+      @media screen and (min-width: #{map-get($mqs, lg)}px) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: #{ceil((map-get($mqs, lg) / $percentage))}px;
+      }
+    }
+    @if $size == xl {
+      @media screen and (min-width: #{map-get($mqs, xl)}px) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: #{ceil((map-get($mqs, xl) / $percentage))}px;
+      }
+    }
+  }
+}
