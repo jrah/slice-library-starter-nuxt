@@ -50,14 +50,6 @@ export const _DefaultSlice = () => ({
     }
   },
   template: '<slice-zone :slices="[ mock ]" :resolver="resolver" />',
-  // template: "<slice :slice=\"mock\" />"
 });
 
-// DefaultSlice.storyName = mocks[0].name;
-// _DefaultSlice.story = {
-//   parameters: {
-//     knobs: {
-//       escapeHTML: false
-//     }
-//   }
-// };
+_DefaultSlice.storyName = mocks[0].name;
