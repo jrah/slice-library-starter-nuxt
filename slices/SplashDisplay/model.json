@@ -1,0 +1,31 @@
+{
+  "id": "splash_display",
+  "type": "SharedSlice",
+  "name": "SplashDisplay",
+  "description": "SplashDisplay",
+  "variations": [{
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "SplashDisplay",
+    "primary": {
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1",
+          "label": "Title",
+          "placeholder": "This is where it all begins..."
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "single": "paragraph",
+          "label": "Description",
+          "placeholder": "A nice description of your product"
+        }
+      }
+    }
+  }]
+}
