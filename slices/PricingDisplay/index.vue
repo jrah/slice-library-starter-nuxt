@@ -9,7 +9,7 @@
       class="subheading mt-3 text-center max-w-5xl mx-auto leading-7 text-gray-700"
     />
     <div class="relative bg-white px-3">
-      <div class="absolute inset-0 h-3/4 bg-gray-100"></div>
+      <div class="absolute inset-0 h-64 bg-gray-100"></div>
       <div
         class="mt-12 pb-12 lg:grid space-y-3 lg:space-y-0 lg:grid-cols-3 lg:gap-8 relative max-w-md lg:max-w-4xl mx-auto overflow-hidden"
       >

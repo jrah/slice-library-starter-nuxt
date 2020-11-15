@@ -1,7 +1,8 @@
 import {
   withKnobs,
   text,
-  object
+  color,
+  select
 } from "@storybook/addon-knobs";
 import Slice from './';
 import model from './model';
@@ -40,6 +41,15 @@ export const _DefaultSlice = () => ({
         _mock.primary.subheading[0].text = text(
           "Subheading",
           _mock.primary.subheading[0].text
+        );
+        _mock.primary.fontcolor = select(
+          "Font Color",
+          {Dark: 'black', Light: 'white'},
+          _mock.primary.fontcolor
+        );
+        _mock.primary.backgroundcolor = color(
+          "Background Color",
+          _mock.primary.backgroundcolor
         );
         return _mock;
       })()
