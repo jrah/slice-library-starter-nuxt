@@ -1,15 +1,17 @@
 <template>
-  <div class="slice bg-gray-100" :class="slice.slice_type">
+  <div class="slice bg-gray-100" :class="slice.slice_type" :style="`background-color:${slice.primary.backgroundcolor}`">
     <prismic-rich-text
       :field="slice.primary.title"
-      class="title text-center text-4xl font-extrabold tracking-tight text-gray-800"
+      class="title text-center text-4xl font-extrabold tracking-tight"
+      :class="fontShade(slice.primary.fontcolor, 1)"
     />
     <prismic-rich-text
       :field="slice.primary.subheading"
       class="subheading mt-3 text-center max-w-5xl mx-auto leading-7 text-gray-700"
+      :class="fontShade(slice.primary.fontcolor)"
     />
     <div class="relative bg-white px-3">
-      <div class="absolute inset-0 h-64 bg-gray-100"></div>
+      <div class="absolute inset-0 h-64" :style="`background-color:${slice.primary.backgroundcolor}`"></div>
       <div
         class="mt-12 pb-12 lg:grid space-y-3 lg:space-y-0 lg:grid-cols-3 lg:gap-8 relative max-w-md lg:max-w-4xl mx-auto overflow-hidden"
       >
@@ -63,10 +65,10 @@ const pricingHtmlSerializer = function (type, element, content, children) {
   // Add a class to paragraph elements
   // console.log(1,type,2, element.text, 3, content, 4, children)
   if (type === Elements.paragraph) {
-    if(element.text.includes("*/")) {
-    const divideText = element.text.split("*/");
-    console.log(divideText[0])
-    return `<div><span class="text-3xl mb-6 block">${divideText[0]}</span> ${divideText[1]}</div>`;
+    if (element.text.includes("*/")) {
+      const divideText = element.text.split("*/");
+      console.log(divideText[0]);
+      return `<div><span class="text-3xl mb-6 block">${divideText[0]}</span> ${divideText[1]}</div>`;
     }
     return `<p class="no-special">${children.join("")}</p>`;
   }
@@ -88,6 +90,14 @@ export default {
       default() {
         return {};
       },
+    },
+  },
+  methods: {
+    fontShade(color, factor = 0) {
+      if (color == "dark") {
+        return `text-grey-${7 + factor}00`;
+      }
+      return `text-blue-${7 + factor}00`;
     },
   },
 };
