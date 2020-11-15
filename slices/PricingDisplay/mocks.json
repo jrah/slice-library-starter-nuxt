@@ -19,147 +19,143 @@
           "text": "Join 1,000+ happy customers",
           "spans": []
         }
-      ]
+      ],
+      "backgroundcolor": "#82ad54",
+      "fontcolor": "dark"
     },
     "items": [
-      {
-        "heading": [
-          {
-            "type": "heading3",
-            "text": "Standard",
-            "spans": []
-          }
-        ],
-        "subheading": [
-          {
-            "type": "paragraph",
-            "text": "Free*/ Reporting, automation, and integrations for support teams",
-            "spans": []
-          }
-        ],
-        "list": [
-          {
-            "type": "list-item",
-            "text": "Lorem, ipsum dolor.",
-            "spans": []
+        {
+            "heading": [
+              {
+                "type": "heading3",
+                "text": "Standard",
+                "spans": []
+              }
+            ],
+            "subheading": [
+              {
+                "type": "paragraph",
+                "text": "Free*/ Reporting, automation, and integrations for support teams",
+                "spans": []
+              }
+            ],
+            "list": [
+              {
+                "type": "list-item",
+                "text": "Lorem, ipsum dolor.",
+                "spans": []
+              },
+              {
+                "type": "list-item",
+                "text": "Lorem, ipsum dolor.",
+                "spans": []
+              },
+              {
+                "type": "list-item",
+                "text": "Lorem, ipsum dolor.",
+                "spans": []
+              },
+              {
+                "type": "list-item",
+                "text": "Lorem, ipsum dolor.",
+                "spans": []
+              },          {
+                "type": "list-item",
+                "text": "Lorem, ipsum dolor.",
+                "spans": []
+              }
+            ],
+            "link_url": { "link_type": "Web", "url": "https://slicemachine.dev" },
+            "link_text": "A text of type \"Link Text\" that conveys undefined"
           },
           {
-            "type": "list-item",
-            "text": "Lorem, ipsum dolor.",
-            "spans": []
+            "heading": [
+              {
+                "type": "heading3",
+                "text": "Plus",
+                "spans": []
+              }
+            ],
+            "subheading": [
+              {
+                "type": "paragraph",
+                "text": "£250*/ Reporting, automation, and integrations for support teams",
+                "spans": []
+              }
+            ],
+            "list": [
+              {
+                "type": "list-item",
+                "text": "Lorem, ipsum dolor.",
+                "spans": []
+              },
+              {
+                "type": "list-item",
+                "text": "Lorem, ipsum dolor.",
+                "spans": []
+              },
+              {
+                "type": "list-item",
+                "text": "Lorem, ipsum dolor.",
+                "spans": []
+              },
+              {
+                "type": "list-item",
+                "text": "Lorem, ipsum dolor.",
+                "spans": []
+              },          {
+                "type": "list-item",
+                "text": "Lorem, ipsum dolor.",
+                "spans": []
+              }
+            ],
+            "link_url": { "link_type": "Web", "url": "https://slicemachine.dev" },
+            "link_text": "A text of type \"Link Text\" that conveys undefined"
           },
           {
-            "type": "list-item",
-            "text": "Lorem, ipsum dolor.",
-            "spans": []
-          },
-          {
-            "type": "list-item",
-            "text": "Lorem, ipsum dolor.",
-            "spans": []
-          },          {
-            "type": "list-item",
-            "text": "Lorem, ipsum dolor.",
-            "spans": []
+            "heading": [
+              {
+                "type": "heading3",
+                "text": "Enterprise",
+                "spans": []
+              }
+            ],
+            "subheading": [
+              {
+                "type": "paragraph",
+                "text": "Contact Us*/ Reporting, automation, and integrations for support teams",
+                "spans": []
+              }
+            ],
+            "list": [
+              {
+                "type": "list-item",
+                "text": "Lorem, ipsum dolor.",
+                "spans": []
+              },
+              {
+                "type": "list-item",
+                "text": "Lorem, ipsum dolor.",
+                "spans": []
+              },
+              {
+                "type": "list-item",
+                "text": "Lorem, ipsum dolor.",
+                "spans": []
+              },
+              {
+                "type": "list-item",
+                "text": "Lorem, ipsum dolor.",
+                "spans": []
+              },          {
+                "type": "list-item",
+                "text": "Lorem, ipsum dolor.",
+                "spans": []
+              }
+            ],
+            "link_url": { "link_type": "Web", "url": "https://slicemachine.dev" },
+            "link_text": "A text of type \"Link Text\" that conveys undefined"
           }
-        ],
-        "link_url": {
-          "link_type": "Any"
-        },
-        "link_text": null
-      },
-      {
-        "heading": [
-          {
-            "type": "heading3",
-            "text": "Plus",
-            "spans": []
-          }
-        ],
-        "subheading": [
-          {
-            "type": "paragraph",
-            "text": "£250*/ Reporting, automation, and integrations for support teams",
-            "spans": []
-          }
-        ],
-        "list": [
-          {
-            "type": "list-item",
-            "text": "Lorem, ipsum dolor.",
-            "spans": []
-          },
-          {
-            "type": "list-item",
-            "text": "Lorem, ipsum dolor.",
-            "spans": []
-          },
-          {
-            "type": "list-item",
-            "text": "Lorem, ipsum dolor.",
-            "spans": []
-          },
-          {
-            "type": "list-item",
-            "text": "Lorem, ipsum dolor.",
-            "spans": []
-          },          {
-            "type": "list-item",
-            "text": "Lorem, ipsum dolor.",
-            "spans": []
-          }
-        ],
-        "link_url": {
-          "link_type": "Any"
-        },
-        "link_text": null
-      },
-      {
-        "heading": [
-          {
-            "type": "heading3",
-            "text": "Enterprise",
-            "spans": []
-          }
-        ],
-        "subheading": [
-          {
-            "type": "paragraph",
-            "text": "Contact Us*/ Reporting, automation, and integrations for support teams",
-            "spans": []
-          }
-        ],
-        "list": [
-          {
-            "type": "list-item",
-            "text": "Lorem, ipsum dolor.",
-            "spans": []
-          },
-          {
-            "type": "list-item",
-            "text": "Lorem, ipsum dolor.",
-            "spans": []
-          },
-          {
-            "type": "list-item",
-            "text": "Lorem, ipsum dolor.",
-            "spans": []
-          },
-          {
-            "type": "list-item",
-            "text": "Lorem, ipsum dolor.",
-            "spans": []
-          },          {
-            "type": "list-item",
-            "text": "Lorem, ipsum dolor.",
-            "spans": []
-          }
-        ],
-        "link_url": {
-          "link_type": "Any"
-        },
-        "link_text": null
-      }
     ],
     "slice_type": "pricing_display"
   }
