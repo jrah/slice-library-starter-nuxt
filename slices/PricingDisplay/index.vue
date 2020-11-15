@@ -1,5 +1,9 @@
 <template>
-  <div class="slice bg-gray-100" :class="slice.slice_type" :style="`background-color:${slice.primary.backgroundcolor}`">
+  <div
+    class="slice bg-gray-100"
+    :class="slice.slice_type"
+    :style="`background-color:${slice.primary.backgroundcolor}`"
+  >
     <prismic-rich-text
       :field="slice.primary.title"
       class="title text-center text-4xl font-extrabold tracking-tight"
@@ -11,7 +15,10 @@
       :class="fontShade(slice.primary.fontcolor)"
     />
     <div class="relative bg-white px-3">
-      <div class="absolute inset-0 h-64" :style="`background-color:${slice.primary.backgroundcolor}`"></div>
+      <div
+        class="absolute inset-0 h-64"
+        :style="`background-color:${slice.primary.backgroundcolor}`"
+      ></div>
       <div
         class="mt-12 pb-12 lg:grid space-y-3 lg:space-y-0 lg:grid-cols-3 lg:gap-8 relative max-w-md lg:max-w-4xl mx-auto overflow-hidden"
       >
@@ -31,26 +38,33 @@
               class="subheading mt-3 text-center max-w-4xl mx-auto leading-6 text-gray-700"
             />
           </div>
-          <ul class="bg-white pb-6 pt-3 px-6">
-            <li
-              v-for="(tick, j) in item.list"
-              :key="j"
-              class="flex items-center"
-            >
-              <svg
-                class="h-8 w-8 text-green-500 fill-current"
-                viewBox="0 0 16 16"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
+          <div class="bg-white pb-6 pt-3 px-6">
+            <ul class="pb-6">
+              <li
+                v-for="(tick, j) in item.list"
+                :key="j"
+                class="flex items-center"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"
-                />
-              </svg>
-              <span class="py-3 text-gray-700">{{ tick.text }}</span>
-            </li>
-          </ul>
+                <svg
+                  class="h-8 w-8 text-green-500 fill-current"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"
+                  />
+                </svg>
+                <span class="py-3 text-gray-700">{{ tick.text }}</span>
+              </li>
+            </ul>
+            <prismic-link
+              class="bg-primary text-white font-bold py-2 px-4 rounded flex justify-center"
+              :field="item.link_url"
+              >{{ item.link_text }}</prismic-link
+            >
+          </div>
         </div>
       </div>
     </div>
