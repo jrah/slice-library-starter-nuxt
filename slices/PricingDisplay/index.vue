@@ -28,7 +28,7 @@
             <prismic-rich-text
               :field="item.subheading"
               :htmlSerializer="pricingHtmlSerializer"
-              class="subheading mt-3 text-center max-w-4xl mx-auto leading-7 text-gray-700"
+              class="subheading mt-3 text-center max-w-4xl mx-auto leading-6 text-gray-700"
             />
           </div>
           <ul class="bg-white pb-6 pt-3 px-6">
