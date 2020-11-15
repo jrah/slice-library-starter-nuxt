@@ -7,7 +7,7 @@
     />
     <prismic-rich-text
       :field="slice.primary.subheading"
-      class="subheading mt-3 text-center max-w-5xl mx-auto leading-7 text-gray-700"
+      class="subheading mt-3 text-center max-w-5xl mx-auto leading-7"
       :class="fontShade(slice.primary.fontcolor)"
     />
     <div class="relative bg-white px-3">
@@ -95,9 +95,9 @@ export default {
   methods: {
     fontShade(color, factor = 0) {
       if (color == "dark") {
-        return `text-grey-${7 + factor}00`;
+        return `text-gray-${7 + factor}00`;
       }
-      return `text-blue-${7 + factor}00`;
+      return `text-gray-100`;
     },
   },
 };
