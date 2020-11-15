@@ -82,6 +82,17 @@
           "config": {
             "label": "Link Text"
           }
+        },
+        "linkvariant": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "options": [
+              "primary",
+              "secondary"
+            ]
+          },
+          "type": "Select"
         }
       }
     }

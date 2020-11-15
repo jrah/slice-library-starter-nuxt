@@ -59,11 +59,7 @@
                 <span class="py-3 text-gray-700">{{ tick.text }}</span>
               </li>
             </ul>
-            <prismic-link
-              class="bg-primary text-white font-bold py-2 px-4 rounded flex justify-center"
-              :field="item.link_url"
-              >{{ item.link_text }}</prismic-link
-            >
+            <anchor :url="item.link_url" :text="item.link_text" :variant="item.linkvariant" />
           </div>
         </div>
       </div>
@@ -71,6 +67,8 @@
   </div>
 </template>
 <script>
+
+import anchor from "~/components/micro/button.vue";
 import prismicDOM from "prismic-dom";
 
 const Elements = prismicDOM.RichText.Elements;
@@ -96,6 +94,9 @@ export default {
     return {
       pricingHtmlSerializer,
     };
+  },
+  components: {
+    anchor
   },
   props: {
     slice: {

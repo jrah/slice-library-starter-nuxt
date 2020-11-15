@@ -2,7 +2,8 @@ import {
   withKnobs,
   text,
   color,
-  select
+  select,
+  object
 } from "@storybook/addon-knobs";
 import Slice from './';
 import model from './model';
@@ -50,6 +51,10 @@ export const _DefaultSlice = () => ({
         _mock.primary.backgroundcolor = color(
           "Background Color",
           _mock.primary.backgroundcolor
+        );
+        _mock.items = object(
+          "Items array",
+          _mock.items
         );
         return _mock;
       })()
