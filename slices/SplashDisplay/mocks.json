@@ -1,20 +1,34 @@
-[{
-  "id": "default-slice",
-  "name": "Default slice",
-  "docURL": "...",
-  "version": "sktwi1xtmkfgx8626",
-  "description": "SplashDisplay",
-  "primary": {
-    "title": [{
-      "type": "heading1",
-      "text": "This is where it all begins...",
-      "spans": []
-    }],
-    "description": [{
-      "type": "paragraph",
-      "text": "start by editing this slice from inside the SliceMachine builder!",
-      "spans": []
-    }]
-  },
-  "slice_type": "splash_display"
-}]
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "SplashDisplay",
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "synthesize end-to-end content",
+          "spans": []
+        }
+      ],
+      "content": [
+        {
+          "type": "heading3",
+          "text": "engineer compelling technologies",
+          "spans": []
+        }
+      ],
+      "image": {
+        "dimensions": { "width": 900, "height": 500 },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.prismic.io/important-sm-images/15fd0037-cfff-4efa-a7a0-cbb9fafd5753_-VKgcOWML4k.jpg?w=900&h=500"
+      },
+      "direction": "default"
+    },
+    "items": [],
+    "slice_type": "splash_display"
+  }
+]
