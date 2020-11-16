@@ -16,15 +16,20 @@
       "content": [
         {
           "type": "heading3",
-          "text": "engineer compelling technologies",
-          "spans": []
-        }
+          "text": "Prismic is a Content Management System, a tool for editing online content",
+          "spans": [ ]
+          },
+          {
+          "type": "paragraph",
+          "text": "Also known as a headless CMS, an API CMS, a content platform, a disruptive content-as-a-service digital experience...basically we've built a tool that lets you choose your technology, framework, and language and then easily manage your content.",
+          "spans": [ ]
+          }
       ],
       "image": {
         "dimensions": { "width": 900, "height": 500 },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.prismic.io/important-sm-images/15fd0037-cfff-4efa-a7a0-cbb9fafd5753_-VKgcOWML4k.jpg?w=900&h=500"
+        "url": "https://source.unsplash.com/weekly?meeting"
       },
       "direction": "default"
     },
