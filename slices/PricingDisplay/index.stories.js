@@ -45,7 +45,7 @@ export const _DefaultSlice = () => ({
         );
         _mock.primary.fontcolor = select(
           "Font Color",
-          {Dark: 'black', Light: 'white'},
+          {Dark: 'dark', Light: 'light'},
           _mock.primary.fontcolor
         );
         _mock.primary.backgroundcolor = color(
