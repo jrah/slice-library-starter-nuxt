@@ -14,7 +14,7 @@
       class="subheading mt-3 text-center max-w-5xl mx-auto leading-7"
       :class="fontShade(slice.primary.fontcolor)"
     />
-    <div class="relative bg-white px-3">
+    <div class="relative bg-white container">
       <div
         class="absolute inset-0 h-64"
         :style="`background-color:${slice.primary.backgroundcolor}`"
