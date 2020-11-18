@@ -26,10 +26,10 @@
           }
       ],
       "image": {
-        "dimensions": { "width": 900, "height": 500 },
+        "dimensions": { "width": 1140, "height": 1026 },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://source.unsplash.com/weekly?pizza/600x600"
+        "url": "https://images.prismic.io/important-sm-images/85ca1e48-d992-44e6-846f-4e11ae6b7d39_ik8tQRvq6us.jpg?w=1140&h=1026"
       },
       "direction": "default"
     },
