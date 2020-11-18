@@ -2,21 +2,21 @@
   <div :class="slice.slice_type">
     <div class="container">
       <div
-        class="lg:flex lg:items-center lg:justify-between flex-col lg:flex-row -mx-8 sm:mx-0"
+        class="lg:flex lg:items-center lg:justify-between flex-col lg:flex-row -mx-8 md:-mx-12 lg:mx-0"
         :class="childOrderReverse ? 'flex-row-reverse' : false"
       >
         <div
           :class="childOrderReverse ? 'lg:pl-4' : 'lg:pr-4'"
-          class="sm:w-1/2 w-full"
+          class="lg:w-1/2 w-full"
         >
           <prismic-image
             v-if="slice.primary.image"
             :field="slice.primary.image"
-            class="object-cover h-64 w-full overflow-hidden"
+            class="object-cover h-32 lg:h-full w-full overflow-hidden"
           />
         </div>
         <div
-          class="w-full sm:w-1/2 flex items-center justify-center mb-6 lg:mb-0"
+          class="w-full lg:w-1/2 flex items-center justify-center mb-6 lg:mb-0"
         >
           <div class="m-auto relative z-20 w-full h-full">
             <prismic-rich-text
