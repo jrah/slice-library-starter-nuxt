@@ -2,24 +2,32 @@
   <div :class="slice.slice_type">
     <div class="container">
       <div
-        class="sm:flex sm:items-center sm:justify-between"
+        class="lg:flex lg:items-center lg:justify-between flex-col lg:flex-row -mx-8 sm:mx-0"
         :class="childOrderReverse ? 'flex-row-reverse' : false"
       >
-        <prismic-rich-text
-          :field="slice.primary.content"
-          :class="`${slice.slice_type}-content`"
-          class="sm:w-1/2 w-full px-6"
-        />
         <div
-          :class="childOrderReverse ? 'sm:pr-4' : 'sm:pl-4'"
-          class="sm:w-1/2 w-full px-6"
+          :class="childOrderReverse ? 'lg:pl-4' : 'lg:pr-4'"
+          class="sm:w-1/2 w-full"
         >
           <prismic-image
             v-if="slice.primary.image"
             :field="slice.primary.image"
+            class="object-cover h-64 w-full overflow-hidden"
           />
         </div>
+        <div
+          class="w-full sm:w-1/2 flex items-center justify-center mb-6 lg:mb-0"
+        >
+          <div class="m-auto relative z-20 w-full h-full">
+            <prismic-rich-text
+              :field="slice.primary.content"
+              :class="`${slice.slice_type}-content`"
+              class="w-full"
+            />
+          </div>
+        </div>
       </div>
+      
     </div>
   </div>
 </template>
@@ -48,7 +56,7 @@ export default {
 .splash_display {
   &-content {
     /deep/ h3 {
-      @apply text-4xl;
+      @apply text-xl;
       @apply font-extrabold;
       @apply tracking-tight;
       @apply text-gray-800;
