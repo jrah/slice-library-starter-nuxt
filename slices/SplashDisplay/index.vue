@@ -8,11 +8,11 @@
         <prismic-rich-text
           :field="slice.primary.content"
           :class="`${slice.slice_type}-content`"
-          class="sm:w-1/2 w-full"
+          class="sm:w-1/2 w-full px-6"
         />
         <div
           :class="childOrderReverse ? 'sm:pr-4' : 'sm:pl-4'"
-          class="sm:w-1/2 w-full"
+          class="sm:w-1/2 w-full px-6"
         >
           <prismic-image
             v-if="slice.primary.image"

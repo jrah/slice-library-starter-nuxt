@@ -16,12 +16,12 @@
       "content": [
         {
           "type": "heading3",
-          "text": "Prismic is a Content Management System, a tool for editing online content",
+          "text": "Love at first slice.. Build immersive experiences with your pizza, and engage with your food.",
           "spans": [ ]
           },
           {
           "type": "paragraph",
-          "text": "Also known as a headless CMS, an API CMS, a content platform, a disruptive content-as-a-service digital experience...basically we've built a tool that lets you choose your technology, framework, and language and then easily manage your content.",
+          "text": "Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.) which is then baked at a high temperature, traditionally in a wood-fired oven.",
           "spans": [ ]
           }
       ],
@@ -29,7 +29,7 @@
         "dimensions": { "width": 900, "height": 500 },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://source.unsplash.com/weekly?meeting/500x400"
+        "url": "https://source.unsplash.com/weekly?pizza/600x600"
       },
       "direction": "default"
     },
