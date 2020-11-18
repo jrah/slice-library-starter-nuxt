@@ -10,7 +10,7 @@
 .container {
   @apply px-8;
   @include mq(sm) {
-    @apply px-24;
+    @apply px-12;
   }
   @extend %mwc;
 }
