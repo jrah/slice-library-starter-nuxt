@@ -56,6 +56,17 @@
             "id": "backgroundcolor",
             "placeholder": ""
           }
+        },
+        "fontcolor": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "options": [
+              "dark",
+              "light"
+            ]
+          },
+          "type": "Select"
         }
       },
       "items": {}
