@@ -41,7 +41,14 @@ export default {
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: ["@nuxtjs/tailwindcss"],
+  buildModules: [
+    [
+      "@nuxtjs/tailwindcss",
+      {
+        cssPath: "~/assets/css/tailwind.css",
+      },
+    ],
+  ],
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     [
@@ -67,8 +74,8 @@ export default {
   },
   webfontloader: {
     google: {
-      families: ['Inter:400,700']
-    }
+      families: ["Inter:400,700"],
+    },
   },
   storybook: {
     addons: ["@storybook/addon-knobs/register", "@storybook/addon-essentials"],
@@ -81,10 +88,10 @@ export default {
           { name: "gray", value: "#EDF2F7" },
         ],
       },
-      layout: 'fullscreen',
+      layout: "fullscreen",
     },
-    webpackFinal (config) {
-      return config
+    webpackFinal(config) {
+      return config;
     },
   },
   ignore: ["**/*.stories.js"],
