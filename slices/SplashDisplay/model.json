@@ -61,6 +61,7 @@
           "config": {
             "label": "",
             "placeholder": "",
+            "default_value": "dark",
             "options": [
               "dark",
               "light"
