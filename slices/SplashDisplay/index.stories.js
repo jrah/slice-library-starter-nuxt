@@ -1,6 +1,8 @@
 import {
   withKnobs,
   text,
+  select,
+  object
 } from "@storybook/addon-knobs";
 import Slice from './';
 import model from './model';
@@ -10,6 +12,7 @@ import cloneDeep from "lodash/cloneDeep";
 
 export default {
   title: model.name,
+  decorators: [withKnobs]
 };
 
 // TODO: Update to loop over mocks.json
@@ -23,12 +26,13 @@ export const DefaultSlice = () => ({
       default: (() => {
         const _mock = cloneDeep(mocks[0]);
 
-        _mock.primary.title[0].text = text(
-          "Title",
-          _mock.primary.title[0].text
+        _mock.primary.content = object(
+          "Content",
+          _mock.primary.content
         );
-        _mock.primary.direction= text(
+        _mock.primary.direction = select(
           "Direction",
+          {default: 'default', reverse: 'reverse'},
           _mock.primary.direction
         );
         return _mock;

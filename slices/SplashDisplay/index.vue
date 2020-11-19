@@ -3,7 +3,7 @@
     <div class="container">
       <div
         class="lg:flex lg:items-center lg:justify-between flex-col lg:flex-row -mx-8 md:-mx-12 lg:mx-0"
-        :class="childOrderReverse ? 'flex-row-reverse' : false"
+        :class="childOrderReverse ? 'lg:flex-row-reverse' : false"
       >
         <div
           :class="childOrderReverse ? 'lg:pl-4' : 'lg:pr-4'"
