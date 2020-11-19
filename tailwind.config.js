@@ -5,7 +5,11 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [],
+  purge: {
+    mode: 'layers',
+    layers: [''],
+
+  },
   theme: {
     extend: {
       colors: { 
