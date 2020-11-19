@@ -59,7 +59,7 @@ export default {
   },
   methods: {
     isImageExist(imageObj) {
-      if (imageObj && imageObj.length > 0) {
+      if (image && imageObj.url.length > 0) {
         return true;
       }
       return false;
