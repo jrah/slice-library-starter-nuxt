@@ -2,6 +2,7 @@
   <div :class="slice.slice_type">
     <div class="container">
       <div
+        v-if="isImageExist(slice.primary.image)"
         class="lg:flex lg:items-center lg:justify-between flex-col lg:flex-row -mx-8 md:-mx-12 lg:mx-0"
         :class="childOrderReverse ? 'lg:flex-row-reverse' : false"
       >
@@ -10,7 +11,6 @@
           class="lg:w-1/2 w-full"
         >
           <prismic-image
-            v-if="slice.primary.image"
             :field="slice.primary.image"
             class="object-cover h-32 lg:h-full w-full overflow-hidden"
           />
@@ -27,7 +27,13 @@
           </div>
         </div>
       </div>
-      
+      <div v-else class="max-w-2xl m-auto text-center py-16">
+        <prismic-rich-text
+          :field="slice.primary.content"
+          :class="`${slice.slice_type}-content`"
+          class="w-full"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -40,6 +46,14 @@ export default {
       default() {
         return {};
       },
+    },
+  },
+  methods: {
+    isImageExist(imageObj) {
+      if (imageObj && imageObj.length > 0) {
+        return true;
+      }
+      return false;
     },
   },
   computed: {
