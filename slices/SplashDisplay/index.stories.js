@@ -25,7 +25,10 @@ export const DefaultSlice = () => ({
     mock: {
       default: (() => {
         const _mock = cloneDeep(mocks[0]);
-
+        _mock.primary.image.url = text(
+          "Image url",
+          _mock.primary.image.url
+        );
         _mock.primary.content = object(
           "Content",
           _mock.primary.content
