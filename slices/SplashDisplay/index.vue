@@ -1,5 +1,8 @@
 <template>
-  <div :class="slice.slice_type">
+  <div
+    :class="slice.slice_type"
+    :style="`background-color:${slice.primary.backgroundcolor}`"
+  >
     <div class="container">
       <div
         v-if="isImageExist(slice.primary.image)"
@@ -21,7 +24,10 @@
           <div class="m-auto relative z-20 w-full h-full">
             <prismic-rich-text
               :field="slice.primary.content"
-              :class="`${slice.slice_type}-content`"
+              :class="[
+                `${slice.slice_type}-content`,
+                fontShade(slice.primary.fontcolor),
+              ]"
               class="w-full"
             />
           </div>
@@ -30,7 +36,10 @@
       <div v-else class="max-w-2xl m-auto text-center py-16">
         <prismic-rich-text
           :field="slice.primary.content"
-          :class="`${slice.slice_type}-content`"
+          :class="[
+            `${slice.slice_type}-content`,
+            fontShade(slice.primary.fontcolor),
+          ]"
           class="w-full"
         />
       </div>
@@ -55,6 +64,12 @@ export default {
       }
       return false;
     },
+    fontShade(color, factor = 0) {
+      if (color == "dark") {
+        return `text-gray-${7 + factor}00`;
+      }
+      return `text-gray-100`;
+    },
   },
   computed: {
     childOrderReverse() {
@@ -73,11 +88,9 @@ export default {
       @apply text-xl;
       @apply font-extrabold;
       @apply tracking-tight;
-      @apply text-gray-800;
     }
     /deep/ p {
       @apply mt-3;
-      @apply text-gray-700;
     }
   }
 }

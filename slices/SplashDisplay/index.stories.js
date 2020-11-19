@@ -2,7 +2,8 @@ import {
   withKnobs,
   text,
   select,
-  object
+  object,
+  color
 } from "@storybook/addon-knobs";
 import Slice from './';
 import model from './model';
@@ -37,6 +38,15 @@ export const DefaultSlice = () => ({
           "Direction",
           {default: 'default', reverse: 'reverse'},
           _mock.primary.direction
+        );
+        _mock.primary.fontcolor = select(
+          "Font color",
+          {Dark: 'dark', Light: 'light'},
+          _mock.primary.fontcolor
+        );
+        _mock.primary.backgroundcolor = color(
+          "Background color",
+          _mock.primary.backgroundcolor
         );
         return _mock;
       })()
