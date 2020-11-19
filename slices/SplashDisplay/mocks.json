@@ -31,7 +31,8 @@
         "copyright": null,
         "url": "https://images.prismic.io/important-sm-images/85ca1e48-d992-44e6-846f-4e11ae6b7d39_ik8tQRvq6us.jpg?w=1140&h=1026"
       },
-      "direction": "default"
+      "direction": "default",
+      "backgroundcolor": "#7c5bd6"
     },
     "items": [],
     "slice_type": "splash_display"

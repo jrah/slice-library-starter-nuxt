@@ -48,6 +48,14 @@
             ]
           },
           "type": "Select"
+        },
+        "backgroundcolor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "backgroundcolor",
+            "placeholder": ""
+          }
         }
       },
       "items": {}
