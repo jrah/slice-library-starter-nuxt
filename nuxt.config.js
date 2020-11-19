@@ -83,6 +83,9 @@ export default {
       },
       layout: 'fullscreen',
     },
+    webpackFinal (config) {
+      return config
+    },
   },
   ignore: ["**/*.stories.js"],
 };
