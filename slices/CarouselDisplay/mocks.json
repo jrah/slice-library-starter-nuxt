@@ -1,20 +1,118 @@
-[{
-  "id": "default-slice",
-  "name": "Default slice",
-  "docURL": "...",
-  "version": "sktwi1xtmkfgx8626",
-  "description": "CarouselDisplay",
-  "primary": {
-    "title": [{
-      "type": "heading1",
-      "text": "This is where it all begins...",
-      "spans": []
-    }],
-    "description": [{
-      "type": "paragraph",
-      "text": "start by editing this slice from inside the SliceMachine builder!",
-      "spans": []
-    }]
-  },
-  "slice_type": "carousel_display"
-}]
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "CarouselDisplay",
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "reintermediate granular channels",
+          "spans": []
+        }
+      ],
+      "subheading": [
+        {
+          "type": "paragraph",
+          "text": "incubate mission-critical blockchains",
+          "spans": []
+        }
+      ]
+    },
+    "items": [
+      {
+        "image": {
+          "dimensions": { "width": 900, "height": 500 },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.prismic.io/important-sm-images/15c70ce3-fa6c-4951-8ce9-269d6e8263b2_1-dAxyaDXf8.jpg?w=900&h=500"
+        },
+        "content": [
+            {
+              "type": "heading3",
+              "text": "incentivize interactive blockchains",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Pesto thin crust duis, pan incididunt stuffed bbq sauce bbq rib. Sauteed onions philly chicken mayo thin crust, commodo qui platter ea eiusmod.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "/a* James",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "/j* Pizza Expert",
+              "spans": []
+            }
+          ]
+      },
+      {
+        "image": {
+          "dimensions": { "width": 900, "height": 500 },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.prismic.io/important-sm-images/05b6c285-b5a7-4034-aa4c-79d41670c3a8_rfS6oq6MWlU.jpg?w=900&h=500"
+        },
+        "content": [
+            {
+              "type": "heading3",
+              "text": "Pizza ipsum dolor amet hand tossed bbq rib lasagna pizza",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Hawaiian banana peppers sauteed onions, bacon & tomato broccoli exercitation adipisicing hand tossed do irure ullamco.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "/a* James",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "/j* Pizza Expert",
+              "spans": []
+            }
+          ]
+      },
+      {
+        "image": {
+          "dimensions": { "width": 900, "height": 500 },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.prismic.io/important-sm-images/ef51bfb6-48fc-4d99-9ca9-a73ab1ff6b25__vQuvwCEtNM.jpg?w=900&h=500"
+        },
+        "content": [
+          {
+            "type": "heading3",
+            "text": "incentivize interactive blockchains",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Pineapple ricotta onions, green bell peppers buffalo sauce tempor chicken and bacon bbq sauce velit occaecat commodo nostrud pan ut. Veniam spinach fugiat bbq rib Chicago style.",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "/a* James",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "/j* Pizza Expert",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "slice_type": "carousel_display"
+  }
+]

@@ -3,29 +3,52 @@
   "type": "SharedSlice",
   "name": "CarouselDisplay",
   "description": "CarouselDisplay",
-  "variations": [{
-    "id": "default-slice",
-    "name": "Default slice",
-    "docURL": "...",
-    "version": "sktwi1xtmkfgx8626",
-    "description": "CarouselDisplay",
-    "primary": {
-      "title": {
-        "type": "StructuredText",
-        "config": {
-          "single": "heading1",
-          "label": "Title",
-          "placeholder": "This is where it all begins..."
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CarouselDisplay",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "subheading": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          },
+          "type": "StructuredText"
         }
       },
-      "description": {
-        "type": "StructuredText",
-        "config": {
-          "single": "paragraph",
-          "label": "Description",
-          "placeholder": "A nice description of your product"
+      "items": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "id": "image",
+            "label": "",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "content": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading3,heading4,heading5,heading6,rtl"
+          },
+          "type": "StructuredText"
         }
       }
     }
-  }]
+  ]
 }
