@@ -4,7 +4,7 @@
       <div class="flex flex-col-reverse sm:flex-row relative px-6">
         <button
           :disabled="this.maxPrevElementArray"
-          class="cursor-pointer w-6 h-6 absolute inset-y-1/2 left-0 bg-secondary"
+          class="cursor-pointer w-8 h-8 absolute inset-y-1/2 left-0 bg-secondary rounded-md"
           @click="showPrevElement()"
         >
           <svg
@@ -28,13 +28,15 @@
         </div>
         <div class="w-full sm:w-1/2">
           <prismic-image
-            class="object-fit rounded-lg"
+            class="object-cover rounded-lg h-96"
             :field="currentElement.image"
+            :height="currentElement.image.dimensions.height"
+            :width="currentElement.image.dimensions.width"
           ></prismic-image>
         </div>
         <button
           :disabled="this.maxNextElementArray"
-          class="cursor-pointer w-6 h-6 absolute inset-y-1/2 right-0 bg-secondary rounded-md"
+          class="cursor-pointer w-8 h-8 absolute inset-y-1/2 right-0 bg-secondary rounded-md"
           @click="showNextElement()"
         >
           <svg
