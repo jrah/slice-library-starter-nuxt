@@ -57,10 +57,3 @@ export default {
   },
 };
 </script>
-
-<style lang="css">
-.container {
-  @apply max-w-4xl;
-  @apply mx-auto;
-}
-</style>
