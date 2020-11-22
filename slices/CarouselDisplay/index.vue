@@ -1,10 +1,10 @@
 <template>
   <div class="slice" :class="slice.slice_type">
     <div class="container">
-      <div class="flex flex-col-reverse sm:flex-row relative px-6">
+      <div class="flex flex-col-reverse sm:flex-row relative max-w-6xl mx-auto shadow-md rounded-md">
         <button
           :disabled="this.maxPrevElementArray"
-          class="cursor-pointer w-8 h-8 absolute inset-y-1/2 left-0 bg-secondary rounded-md"
+          class="cursor-pointer focus:outline-none w-12 h-12 absolute inset-y-1/2 left-0 bg-primary text-white rounded-full -ml-6 -mt-6"
           @click="showPrevElement()"
         >
           <svg
@@ -22,13 +22,13 @@
         <div class="w-full sm:w-1/2 flex">
           <prismic-rich-text
             :class="`${slice.slice_type}-content`"
-            class="self-center p-4"
+            class="self-center pl-12"
             :field="currentElement.content"
           ></prismic-rich-text>
         </div>
         <div class="w-full sm:w-1/2">
           <prismic-image
-            class="object-cover rounded-lg h-96"
+            class="object-cover h-96 w-96 ml-auto rounded-r-md"
             :field="currentElement.image"
             :height="currentElement.image.dimensions.height"
             :width="currentElement.image.dimensions.width"
@@ -36,7 +36,7 @@
         </div>
         <button
           :disabled="this.maxNextElementArray"
-          class="cursor-pointer w-8 h-8 absolute inset-y-1/2 right-0 bg-secondary rounded-md"
+          class="cursor-pointer  focus:outline-none w-12 h-12 absolute inset-y-1/2 right-0 bg-primary rounded-full -mr-6 -mt-6 shadow-md text-white"
           @click="showNextElement()"
         >
           <svg
@@ -97,6 +97,12 @@ export default {
 .carousel_display {
   :disabled {
     @apply opacity-25;
+  }
+  /deep/ h3 {
+    @apply text-2xl;
+    @apply font-extrabold;
+    @apply tracking-tight;
+    @apply mb-2;
   }
 }
 </style>

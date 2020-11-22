@@ -30,27 +30,27 @@
           "url": "https://images.prismic.io/important-sm-images/15c70ce3-fa6c-4951-8ce9-269d6e8263b2_1-dAxyaDXf8.jpg?w=900&h=500"
         },
         "content": [
-            {
-              "type": "heading3",
-              "text": "incentivize interactive blockchains",
-              "spans": []
-            },
-            {
-              "type": "paragraph",
-              "text": "Pesto thin crust duis, pan incididunt stuffed bbq sauce bbq rib. Sauteed onions philly chicken mayo thin crust, commodo qui platter ea eiusmod.",
-              "spans": []
-            },
-            {
-              "type": "paragraph",
-              "text": "/a* James",
-              "spans": []
-            },
-            {
-              "type": "paragraph",
-              "text": "/j* Pizza Expert",
-              "spans": []
-            }
-          ]
+          {
+            "type": "heading3",
+            "text": "Pizza ipsum dolor amet hand tossed bbq rib lasagna pizza",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Hawaiian banana peppers sauteed onions, bacon & tomato broccoli exercitation adipisicing hand tossed do irure ullamco.",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "/a* James",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "/j* Pizza Expert",
+            "spans": []
+          }
+        ]
       },
       {
         "image": {
