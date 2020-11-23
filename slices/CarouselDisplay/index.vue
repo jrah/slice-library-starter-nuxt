@@ -24,14 +24,14 @@
         <div class="w-full sm:w-1/2 flex">
           <prismic-rich-text
             :class="`${slice.slice_type}-content`"
-            class="self-center pl-12"
+            class="self-center px-6 py-6 sm:pr-0 sm:py-0 sm:pl-12"
             :field="currentElement.content"
             :htmlSerializer="htmlSerializer"
           ></prismic-rich-text>
         </div>
         <div class="w-full sm:w-1/2">
           <prismic-image
-            class="object-cover h-96 w-96 ml-auto rounded-r-md"
+            class="object-cover w-full h-96 sm:w-96 ml-auto sm:rounded-r-md"
             :field="currentElement.image"
             :height="currentElement.image.dimensions.height"
             :width="currentElement.image.dimensions.width"
