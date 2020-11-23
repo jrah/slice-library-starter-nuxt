@@ -1,20 +1,97 @@
-[{
-  "id": "default-slice",
-  "name": "Default slice",
-  "docURL": "...",
-  "version": "sktwi1xtmkfgx8626",
-  "description": "FAQDisplay",
-  "primary": {
-    "title": [{
-      "type": "heading1",
-      "text": "This is where it all begins...",
-      "spans": []
-    }],
-    "description": [{
-      "type": "paragraph",
-      "text": "start by editing this slice from inside the SliceMachine builder!",
-      "spans": []
-    }]
-  },
-  "slice_type": "f_a_q_display"
-}]
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "FAQDisplay",
+    "primary": {
+      "title": [
+        { "type": "heading1", "text": "expedite visionary niches", "spans": [] }
+      ]
+    },
+    "items": [
+      {
+        "heading": [
+          {
+            "type": "heading3",
+            "text": "benchmark killer systems",
+            "spans": []
+          }
+        ],
+        "paragraph": [
+          {
+            "type": "paragraph",
+            "text": "Party large pork garlic parmesan burnt mouth parmesan buffalo sauce steak. Red onions Chicago style thin crust white pizza beef white garlic. Chicken wing extra cheese pork, spinach party bacon & tomato parmesan.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "heading": [
+          {
+            "type": "heading3",
+            "text": "morph world-class technologies",
+            "spans": []
+          }
+        ],
+        "paragraph": [
+          {
+            "type": "paragraph",
+            "text": "Banana peppers melted cheese large, bianca chicken wing bbq rib deep crust green bell peppers sausage burnt mouth ham pesto stuffed. Bbq sauce chicken wing NY style Chicago style pork garlic sauce fresh tomatoes anchovies pesto.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "heading": [
+          {
+            "type": "heading3",
+            "text": "benchmark killer systems",
+            "spans": []
+          }
+        ],
+        "paragraph": [
+          {
+            "type": "paragraph",
+            "text": "Party large pork garlic parmesan burnt mouth parmesan buffalo sauce steak. Red onions Chicago style thin crust white pizza beef white garlic. Chicken wing extra cheese pork, spinach party bacon & tomato parmesan.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "heading": [
+          {
+            "type": "heading3",
+            "text": "benchmark killer systems",
+            "spans": []
+          }
+        ],
+        "paragraph": [
+          {
+            "type": "paragraph",
+            "text": "Party large pork garlic parmesan burnt mouth parmesan buffalo sauce steak. Red onions Chicago style thin crust white pizza beef white garlic. Chicken wing extra cheese pork, spinach party bacon & tomato parmesan.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "heading": [
+          {
+            "type": "heading3",
+            "text": "benchmark killer systems",
+            "spans": []
+          }
+        ],
+        "paragraph": [
+          {
+            "type": "paragraph",
+            "text": "Party large pork garlic parmesan burnt mouth parmesan buffalo sauce steak. Red onions Chicago style thin crust white pizza beef white garlic. Chicken wing extra cheese pork, spinach party bacon & tomato parmesan.",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "slice_type": "f_a_q_display"
+  }
+]
