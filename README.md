@@ -189,3 +189,6 @@ Once the build is finished, head over to the "**Site overview**" tab. The URL of
 
 Congratulations! You documentation is now hosted and will update itself whenever you commit to your repository.
 
+
+
+Customise the default content model when generate new slice using create-slice

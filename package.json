@@ -34,9 +34,9 @@
     "@nuxtjs/tailwindcss": "^3.2.0",
     "@storybook/addon-actions": "6.0.26",
     "@storybook/addon-knobs": "6.0.26",
-    "prismic-cli": "3.8.3-beta.0",
+    "prismic-cli": "^3.8.5",
     "shx": "^0.3.3",
-    "slice-machine-ui": "^0.0.38",
+    "slice-machine-ui": "^0.0.43",
     "sm-commons": "^0.0.23"
   }
 }
