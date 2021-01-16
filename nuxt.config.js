@@ -79,7 +79,7 @@ export default {
   },
   storybook: {
     addons: ["@storybook/addon-knobs/register", "@storybook/addon-essentials"],
-    stories: ["~/slices/**/*.stories.js"],
+    stories: ["~/slices/**/*.stories.js", "~/components/*.stories.js"],
     parameters: {
       backgrounds: {
         default: "white",
