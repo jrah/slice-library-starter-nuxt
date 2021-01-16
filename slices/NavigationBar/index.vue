@@ -2,7 +2,7 @@
   <div
     class="container"
   >
-    <div class="relative flex items-center justify-between sm:h-10 md:justify-center">
+    <div class="relative flex items-center justify-between sm:h-16 md:justify-center">
       <nuxt-link
         to="/"
         class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0"
