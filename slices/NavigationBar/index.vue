@@ -1,0 +1,50 @@
+<template>
+  <div
+    class="container"
+  >
+    <div class="relative flex items-center justify-between sm:h-10 md:justify-center">
+      <nuxt-link
+        to="/"
+        class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0"
+      >
+        <span class="sr-only">{{ slice.primary.title }}</span>
+        <img
+          src="~/assets/images/sample/svg/logo-123.svg"
+          class="h-8 w-auto sm:h-12"
+          alt="logo"
+        />
+      </nuxt-link>
+      <div class="hidden md:flex md:space-x-10">
+        <nuxt-link
+          v-for="(item, i) in links"
+          :key="i"
+          class="font-medium text-gray-500 hover:text-gray-700"
+        >
+          {{ item }}</nuxt-link
+        >
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  props: {
+    slice: {
+      type: Object,
+      required: true,
+      default() {
+        return {};
+      },
+    },
+  },
+  data() {
+    return {
+      links: ["Products", "Earn", "Borrow"],
+    };
+  },
+};
+</script>
+<style scoped>
+</style>
+
+
