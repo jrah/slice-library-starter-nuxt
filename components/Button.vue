@@ -13,7 +13,7 @@ export default {
     url: {
       type: Object,
       required: true,
-      default: { link_type: "Web", url: "/" },
+      default: () => { return {link_type: "Web", url: "/"} },
     },
     text: {
       type: String,
