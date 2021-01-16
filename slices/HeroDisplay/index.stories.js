@@ -2,6 +2,7 @@ import SliceZone from 'vue-slicezone'
 import model from './model'
 import mocks from './mocks.json'
 import Slice from './'
+import customMocks from './custom_mocks.json';
 
 export default {
   title: model.name,
@@ -15,7 +16,7 @@ export const DefaultSlice = () => ({
   },
   data() {
     return {
-      mock: mocks[0],
+      mock: customMocks[0],
       resolver() {
         return Slice
       },
