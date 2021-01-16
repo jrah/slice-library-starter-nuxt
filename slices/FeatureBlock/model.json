@@ -20,12 +20,13 @@
           }
         },
         "subheading": {
-          "type": "StructuredText",
           "config": {
-            "single": "paragraph",
             "label": "Subheading",
-            "placeholder": "Subheading"
-          }
+            "placeholder": "Subheading",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          },
+          "type": "StructuredText"
         }
       },
       "items": {
