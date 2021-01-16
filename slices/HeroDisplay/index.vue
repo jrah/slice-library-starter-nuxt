@@ -1,5 +1,5 @@
 <template>
-  <section class="flex">
+  <section class="container flex">
     <div class="relative z-10 w-full sm:w-1/2 mt-32 sm:mt-0 lg:mt-2">
       <div class="max-w-lg">
         <prismic-rich-text
@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import anchor from "~/components/micro/button.vue";
+import anchor from "~/components/Button.vue";
 
 export default {
   props: {

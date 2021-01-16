@@ -68,7 +68,7 @@
 </template>
 <script>
 
-import anchor from "~/components/micro/button.vue";
+import anchor from "~/components/Button.vue";
 import prismicDOM from "prismic-dom";
 
 const Elements = prismicDOM.RichText.Elements;
