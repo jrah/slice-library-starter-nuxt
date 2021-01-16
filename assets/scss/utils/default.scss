@@ -1,0 +1,10 @@
+//scss
+@import '~assets/scss/mixins';
+
+.container {
+  @apply px-8;
+  @include mq(ns) {
+    @apply px-16;
+  }
+  @extend %mwc;
+}
