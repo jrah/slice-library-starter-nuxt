@@ -1,8 +1,8 @@
 <template>
-  <div
-    class="container"
-  >
-    <div class="relative flex items-center justify-between sm:h-16 md:justify-center">
+  <div class="container">
+    <div
+      class="relative flex items-center justify-between sm:h-16 md:justify-center"
+    >
       <nuxt-link
         to="/"
         class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0"
@@ -22,6 +22,18 @@
         >
           {{ item }}</nuxt-link
         >
+      </div>
+      <div
+        class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0"
+      >
+        <div class="inline-flex rounded-md shadow">
+          <nuxt-link
+            to="/"
+            class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded md text-indigo-600 bg-white hover:bg-gray-50"
+          >
+            Create account
+          </nuxt-link>
+        </div>
       </div>
     </div>
   </div>
