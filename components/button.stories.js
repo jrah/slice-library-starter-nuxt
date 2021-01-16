@@ -1,3 +1,3 @@
-export default { title: 'Components' }
+export default { title: 'Auxiliary/Button' }
 
 export const button = () => '<Button>Hello</Button>'
