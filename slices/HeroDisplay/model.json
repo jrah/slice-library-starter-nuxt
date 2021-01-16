@@ -16,12 +16,47 @@
             "label": "Title",
             "placeholder": "This is where it all begins...",
             "allowTargetBlank": true,
-            "single": "heading2"
+            "single": "heading2,heading1"
+          },
+          "type": "StructuredText"
+        },
+        "image": {
+          "config": {
+            "label": "",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "richtext": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           },
           "type": "StructuredText"
         }
       },
-      "items": {}
+      "items": {
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "",
+            "id": "link",
+            "placeholder": "",
+            "allowTargetBlank": true
+          }
+        },
+        "linktext": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "linktext",
+            "placeholder": ""
+          }
+        }
+      }
     }
   ]
 }
