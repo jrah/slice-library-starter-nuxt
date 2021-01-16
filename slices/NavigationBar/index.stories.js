@@ -4,7 +4,7 @@ import mocks from './mocks.json';
 import SliceZone from 'vue-slicezone';
 
 export default {
-  title: model.name,
+  title: `Patterns/${model.name}`,
 };
 
 // TODO: Update to loop over mocks.json

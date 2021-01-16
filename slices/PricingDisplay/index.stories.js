@@ -12,7 +12,7 @@ import SliceZone from 'vue-slicezone';
 import cloneDeep from "lodash/cloneDeep";
 
 export default {
-  title: model.name,
+  title: `Patterns/${model.name}`,
   decorators: [withKnobs]
 };
  
