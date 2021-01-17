@@ -8,17 +8,21 @@
           to="/"
           class="flex items-center justify-between w-full md:w-auto"
         >
-          <span class="sr-only">{{ 'slice.primary.title' }}</span>
+          <span class="sr-only">{{ "slice.primary.title" }}</span>
           <img
             src="~/assets/images/sample/svg/logo-123.svg"
             class="h-8 w-auto sm:h-12"
             alt="logo"
           />
         </nuxt-link>
+        <div class="-mr-2 flex items-center md:hidden">
+          <burger />
+        </div>
         <div class="hidden space-x-10 md:flex md:ml-10">
           <nuxt-link
             v-for="(item, i) in links"
             :key="i"
+            to="/"
             class="font-medium text-gray-500 hover:text-gray-700"
           >
             {{ item }}</nuxt-link
@@ -36,29 +40,33 @@
             </nuxt-link>
           </div>
         </div>
+        <mobile-menu>
+          <a
+            href="#"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+            role="menuitem"
+            v-for="(item, i) in links"
+            :key="i"
+            >{{ item }}</a
+          ></mobile-menu
+        >
       </div>
     </div>
   </div>
 </template>
 <script>
+import mobileMenu from "~/components/menu/MobileMenu.vue";
+import burger from "~/components/menu/Burger.vue";
+
 export default {
-  props: {
-    slice: {
-      type: Object,
-      required: true,
-      default() {
-        return {};
-      },
-    },
-  },
   data() {
     return {
       links: ["Products", "Earn", "Borrow"],
     };
   },
+  components: {
+    mobileMenu,
+    burger,
+  },
 };
 </script>
-<style scoped>
-</style>
-
-
