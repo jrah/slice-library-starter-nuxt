@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div
-      class="relative flex items-center justify-between sm:h-16 md:justify-center"
+      class="relative flex items-center justify-between h-16 sm:h-24 md:justify-center"
     >
       <div class="flex items-center flex-1">
         <nuxt-link
